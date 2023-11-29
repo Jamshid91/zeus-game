@@ -1,0 +1,660 @@
+@import './_font';
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'PingFang', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+}
+.stopScroll {
+    overflow: hidden !important;
+}
+button,input {
+    border: none;
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+ul,li,p,a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.pointer {
+    cursor: pointer;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    max-width: 1760px;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 24px 0;
+    margin-bottom: 50px;
+    &-logo {
+        .logo {
+            margin-right: 20px;
+        }
+        .logo__text {
+            font-size: 18px;
+            line-height: 21px;
+            font-family: 'ethnocentric', sans-serif;
+        }
+    }
+    &-social {
+        margin-right: 60px;
+        .social {
+            margin-right: 30px;
+            &:hover svg {
+                g{
+                    opacity: 1;
+                }
+                path {
+                    fill: #F2B600;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &-list {
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'ethnocentric', sans-serif;
+        color: #fff;
+        opacity: 0.6;
+        margin-right: 60px;
+        &:hover {
+            opacity: 1;
+            color: #F2B600;
+        }
+    }
+    .sign-up {
+        width: 146px;
+        height: 40px;
+        border-radius: 4px;
+        border: 2px solid #F2B600;
+        color: #F2B600;
+        background: transparent;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'ethnocentric', sans-serif;
+        &:hover {
+            background: #F2B600;
+            color: #fff;
+        }
+    }
+}
+.title__text {
+    font-size: 28px;
+    line-height: 33px;
+    font-family: 'ethnocentric', sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+    &::before {
+        content: url(../img/png/line.png);
+        margin-right: 12px;
+    }
+}
+.wrapper-bg {
+    background-image: url(../img/png/home-wrapper.jpg);
+    width: 100%;
+    height: 1100px;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} 
+.swiper-button-prev,
+.swiper-button-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+    &::after {
+        display: none;
+    }
+    &:hover {
+        background: #F2B600;
+    }
+}
+.main {
+    position: relative;
+    max-width: 1740px;
+    margin: 0 auto;
+    &::before {
+        content: '';
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-image: url(../img/png/main-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right                                                                           ;
+    }  
+    // Sidebar
+    .sidebar {
+        min-width: 247px;
+        padding-right: 5px;
+        position: relative;
+       &-item {
+        width: 247px;
+        position: sticky;
+        top: 50px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 32px;
+            width: 1px;
+            height: 98%;
+            background: #fff;
+            opacity: .1;
+        }
+       }
+       &-list {
+        height: 66px;
+        display: flex;
+        align-items: center;
+        padding: 9px;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .icon {
+            min-width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, .2);
+            margin-right: 8px;
+        }
+        .text {
+            font-size: 16px;
+            line-height: 20px;
+            font-family: 'ethnocentric', sans-serif;
+            color: #fff;
+            opacity: 0.6;
+        }
+        &:hover {
+            background-image: url(../img/png/list.png);
+            .text {
+                opacity: 1;
+            }
+        }
+       }
+       .active {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        .icon {
+            svg path {
+                fill: #030203
+            }
+        }
+        .text {
+            color: #030203;
+            opacity: 1;
+        }
+       }
+       .sidebar-list:nth-child(1).active {
+        background-image: url(../img/png/list1.png);
+       }
+       .sidebar-list:nth-child(2).active {
+        background-image: url(../img/png/list2.png);
+       }
+       .sidebar-list:nth-child(3).active {
+        background-image: url(../img/png/list3.png);
+       }
+       .sidebar-list:nth-child(4).active {
+        background-image: url(../img/png/list4.png);
+       }
+       .sidebar-list:nth-child(5).active {
+        background-image: url(../img/png/list5.png);
+       }
+       .sidebar-list:nth-child(6).active {
+        background-image: url(../img/png/list6.png);
+       }
+       .sidebar-list:nth-child(7).active {
+        background-image: url(../img/png/list7.png);
+       }
+       .sidebar-list:nth-child(8).active {
+        background-image: url(../img/png/list8.png);
+       }
+    }     
+    &-box {
+        max-width: 100%;
+        overflow: hidden;
+
+        // Wrapper
+        .wrapper {
+            margin: 100px 0 190px;
+            padding-left: 90px;
+            &-title {
+                margin-bottom: 40px;
+                &__img {
+                    object-fit: contain;
+                    &:first-child {
+                        width: 50%;
+                    }
+                    &:last-child {
+                        margin-top: 30px;
+                        width: 32%;
+                    }
+                }
+            }
+            .swiper-blockchain {
+                .blockchain__text {
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #fff;
+                    margin-bottom: 30px;
+                    width: 50%;
+                }
+                .blockchain__play-now {
+                    width: 227px;
+                    height: 68px;
+                    background-image: url(../img/png/play-now.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #030203;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-family: 'ethnocentric', sans-serif;
+                    margin-top: 40px;
+                    &:hover {
+                        color: #fff
+                    }
+                }
+            }
+            .blockchain-prev,
+            .blockchain-next {
+                position: absolute;
+                z-index: 3;
+                top: 55%;
+            }
+            .blockchain-prev {
+                left: 10px;
+            }
+            .blockchain-next {
+                right: 10px;
+            }
+        }  
+
+        .swiper-pagination-bullet {
+            opacity: .8;
+            background: #fff;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #F2B600;
+            transform: scale(1.9);
+        }
+        // Games
+        .games {
+            &-card {
+                color: #fff;
+                &__img {
+                    width: 100%;
+                    height: 222px;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                    border: 1px solid #959292;
+                }
+                &__title {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                .fps {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                .circle {
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background: #fff;
+                }
+                .application {
+                    margin-right: 4px;
+                }
+            }
+            .swiper-slide-active {
+                .games-card__img {
+                    border-color: #F2B600;
+                }
+                .play-now {
+                    background-image: url(../img/png/play-now2.png);
+                }
+            }
+            .swiper {
+                margin: 0 50px;
+                padding: 0 2px;
+            }
+            .games-prev,
+            .games-next {
+                width: 36px;
+                height: 90px;
+                border-radius: 10px 0 0 10px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%)
+            }
+            .games-next {
+                border-radius: 0 10px 10px 0;
+            }
+        }
+        .play-now,
+        .buy-now {
+            width: 164px;
+            height: 52px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: rgba(255,255,255,.1);
+            font-size: 14px;
+            line-height: 18px;
+            font-family: 'ethnocentric', sans-serif;
+            &:hover {
+                color: #030203;
+                background-image: url(../img/png/play-now2.png);
+            }
+
+        }
+
+        // banner 
+        .banner {
+            margin: 60px 0;
+            &-box {
+                background-image: url(../img/png/banner.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                min-height: 402px;
+                padding: 46px 20px 40px 54px;
+                position: relative;
+                border-radius: 8px;
+                border: 1px solid gray;
+            }
+            &-title {
+                &__img {
+                    object-fit: contain;
+                    &:first-child {
+                        width: 45%;
+                    }
+                    &:last-child {
+                        width: 18%;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 25px;
+                width: 50%;
+                color: #fff;
+                opacity: 0.6;
+                margin: 30px 0;
+            }
+            .banner-girl {
+                position: absolute;
+                bottom: 0;
+                left: 48%;
+                transform: translateX(-50%);
+            }
+        }
+
+        // NFT Collections
+        .nft {
+            &-card {
+                background: rgba(255,255,255, .1);
+                border-radius: 8px;
+                overflow: hidden;
+                &-info {
+                    padding: 20px 18px;
+                }
+                &__img {
+                    width: 100%;
+                    height: 178px;
+                    object-fit: cover;
+                }
+                &__title {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    margin: 20px 0 6px;
+                    color: #fff;
+                }
+                &__text {
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #fff;
+                    opacity: 0.6;
+                }
+                .buy-now {
+                    width: 100%;
+                    height: 52px;
+                    background: rgba(255,255,255, .2);
+                    color: #fff;
+                    margin-top: 30px;
+                    &:hover {
+                        background-image: url(../img/png/play-now2.png);
+                        background-size: 100% 100%;
+                        color: #030203;
+                    }
+                }
+            }
+            .swiper-nft {
+                margin: 0 50px 60px 50px;
+                padding: 0 2px;
+            }
+            .swiper-slide-active {
+                .nft-card {
+                    border: 1px solid #F2B600;
+                }
+                .buy-now {
+                    background-image: url(../img/png/play-now2.png);
+                    background-size: 100% 100%;
+                    color: #030203
+                }
+            }
+            .nft-prev,
+            .nft-next {
+                width: 36px;
+                height: 90px;
+                border-radius: 10px 0 0 10px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%)
+            }
+            .nft-next {
+                border-radius: 0 10px 10px 0;
+            }
+
+            &-item {
+                margin-bottom: 20px;
+                &__img {
+                    width: 100%;
+                    height: 254px;
+                    border-radius: 4px;
+                    margin-bottom: 30px;
+                    object-fit: cover;
+                }
+                &__title {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                &__text {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #fff;
+                    opacity: 0.6;
+                    font-weight: 400;
+                }
+                .buy-now {
+                    min-width: 164px;
+                }
+            }
+        }
+
+        // artocles
+        .artocles {
+            margin: 60px 0;
+            &-card {
+                color: #fff;
+                &__img {
+                    width: 100%;
+                    height: 226px;
+                    border-radius: 8px;
+                    object-fit: cover;
+                    border: 1px solid grey;
+                }
+                &__title {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    margin: 15px 0 1.5px;
+                }
+                &__text {
+                    font-size: 16px;
+                    line-height: 20px;
+                    opacity: 0.6;
+                }
+            }
+            .swiper-artocles {
+                margin: 0 50px;
+                padding: 0 2px;
+            }
+            .swiper-slide-active {
+                .nft-card__img {
+                    border: 1px solid #F2B600;
+                }
+            }
+            .artocles-prev,
+            .artocles-next {
+                width: 36px;
+                height: 90px;
+                border-radius: 10px 0 0 10px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%)
+            }
+            .artocles-next {
+                border-radius: 0 10px 10px 0;
+            }
+        }
+
+        // partnership
+        .partnership {
+            &-box {
+                border: 1px solid gray;
+                background: rgba(255,255,255, .07);
+                padding: 30px 40px;
+                overflow-x: scroll;
+                &::-webkit-scrollbar {
+                    background: transparent;
+                    height: 6px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #F2B600;
+                    border-radius: 8px;
+                    height: 6px;
+                }
+            }
+            &__img {
+                margin-right: 30px;
+                object-fit: contain;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        // footer
+        .footer {
+            padding: 60px 0 40px;
+            &-social {
+                margin-bottom: 40px;
+                .social {
+                    margin-right: 30px;
+                    &:hover svg {
+                        g{
+                            opacity: 1;
+                        }
+                        path {
+                            fill: #F2B600;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            &-item {
+                margin-right: 70px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            &-list {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 25px;
+                color: #fff;
+                opacity: 0.8;
+                &:hover {
+                    color: #F2B600;
+                    opacity: 1;
+                }
+            }
+            &-sub {
+                border-top: 1px solid gray;
+                padding-top: 30px;
+                &__text {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #fff;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+}
+
+
+@import './_media';
