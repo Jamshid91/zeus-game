@@ -71,6 +71,60 @@
                 }
             } 
         } 
+
+        .tournament-wrapper {
+            .timer {
+                margin: 30px 0 50px;
+              }
+            .timer__item {
+                font-size: 100px;
+                line-height: 140px;
+                &:not(:last-child)::after {
+                   right: -40%;
+                  }
+                  &:first-child::after {
+                      right: -50%;
+                  }
+            }
+        }
+
+        .tournament-table {
+           thead {
+            th {
+                font-size: 16px;
+                line-height: 20px;
+                padding: 10px;
+            }
+           }
+           tbody {
+            tr:first-child td {
+                padding-top: 20px;
+            }
+            tr:last-child td {
+                padding-bottom: 20px;
+            }
+            td {
+                font-size: 16px;
+                line-height: 20px;
+                padding: 10px;
+                &:last-child {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+           }
+        }
+
+        .champions {
+            width: 100%;
+            &-card {
+                width: 31%;
+                .chempion {
+                    width: 150px;
+                    right: -40px;
+                }
+            }
+        }
     }
 }
 
@@ -152,6 +206,136 @@
                 }
             } 
         } 
+    }
+
+    // etherstrike
+    .main {
+        .etherstrike {
+            padding-left: 20px;
+            &-box {
+                height: 500px;
+                margin-bottom: 30px;
+            }
+            &-girl {
+                position: absolute;
+                bottom: -20px;
+                right: -20px;
+                height: 250px;
+            }
+            &-check {
+                top: 10px;
+                left: 10px;
+                .check-bg {
+                    width: 140px;
+                    height: 60px;
+                    margin-bottom: 5px;
+                }
+            }
+            &-text {
+                position: absolute;
+                left: 10px;
+                bottom: 15px;
+                &__img {
+                    height: 30px;
+                }
+            }
+            &__title {
+                font-size: 20px;
+                line-height: 22px;
+            }
+            &__text {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .play-now {
+                width: 200px;
+                height: 60px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+        .play-item {
+            .play-list {
+                height: 45px;
+                padding: 0 8px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .icon {
+                    margin-right: 8px;
+                }
+                .text {
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+
+        // nft-collections
+        .nft-collections {
+            &-card {
+                width: 49%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                &__img {
+                    width: 100%;
+                }
+                &-info {
+                    height: auto;
+                    padding: 0;
+                    margin-top: 10px;
+                }
+                &__title {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .main {
+        .product {
+            .swiper-product-active {
+                margin-bottom: 30px;
+                .product__img {
+                    height: 400px;
+                }
+            }
+                
+            .product-prev,
+            .product-next {
+                width: 24px;
+                height: 60px;
+                border-radius: 10px 0 0 10px;
+                position: absolute;
+                top: 70%;
+                transform: translateY(-50%)
+            }
+            .product-prev {
+                left: 0;
+            }
+            .product-next {
+                right: 0;
+                border-radius: 0 10px 10px 0;
+            }
+            .play-now-link {
+                margin-top: 30px;
+                padding-bottom: 15px;
+                display: inline-block;
+            }
+            .play-now {
+                width: 300px;
+            }
+            .play-item {
+                z-index: 999;
+            }
+            &__title {
+                font-size: 28px;
+                line-height: 32px;
+                margin-top: 20px;
+            }
+        }
     }
 }
 
@@ -299,8 +483,253 @@
             }
         }
         } 
+
+        .champions {
+            width: 100%;
+            &-card {
+                width: 31%;
+                &-info {
+                    padding: 20px 10px;
+                }
+                .user-photo {
+                    left: 6px;
+                }
+                &__img {
+                    height: 200px;
+                }
+                .chempion {
+                    width: 120px;
+                    right: -30px;
+                    bottom: -10px;
+                }
+            }
+        }
+
+        .check-table {
+            &__btn {
+                font-size: 16px;
+                line-height: 20px;
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+            .checked {
+                &::before {
+                    width: 45px;
+                    height: 3px;
+                }
+            }
+        }
+    }
+
+    // token-page 
+    .main {
+        .token-page {
+            padding-left: 10px;
+            .token-wrapper {
+                background-position: 30% 0;
+                padding: 20px;
+                margin-bottom: 40px;
+                
+                .token-title__img {
+                    height: 60px;
+                    &:last-child {
+                        height: 25px;
+                        margin-top: 15px;
+                    }
+                }
+                .token__text {
+                    font-size: 14px;
+                    line-height: 20px;
+                    width: 60%;
+                    margin: 25px 0 90px;
+                }
+                .buy-now {
+                    width: 180px;
+                    height: 55px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+
+    // about us
+    .main {
+        .about {
+            &__title {
+                font-size: 22px;
+                line-height: 28px;
+                margin-bottom: 30px;
+                &::before {
+                    width: 50px;
+                }
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
+
+            &-item {
+                &__title {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 15px 0 10px;
+                }
+                &__text {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+            .roadmap {
+                &-item {
+                    &__title {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    &__text {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
     }
 }
+
+@media (max-width: 768px) {
+    .main {
+        .tournament-wrapper {
+            padding: 40px 10px 50px;
+            &__text {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            .timer {
+                margin: 10px 0 40px;
+            }
+            .timer__item {
+                font-size: 50px;
+                line-height: 80px;
+                margin-right: 30px;
+                &:not(:last-child)::after {
+                   right: -25%;
+                   font-size: 30px;
+                  }
+                  &:first-child::after {
+                      right: -30%;
+                  }
+                  &::before {
+                    font-size: 10px;
+                    line-height: 14px;
+                  }
+            }
+            .form {
+                width: 95%;
+                .input-box {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    svg {
+                        left: 8px;
+                    }
+                }
+                &__inp {
+                    height: 55px;
+                    padding: 0 20px 0 50px;
+                }
+                &__btn {
+                    height: 60px;
+                    font-size: 17px;
+                }
+            }
+        }
+    
+        .tournament-table {
+           thead {
+            th {
+                font-size: 10px;
+                line-height: 14px;
+                padding: 5px;
+                &:last-child {
+                    position: absolute;
+                    right: 5px;
+                }
+            }
+            tr {
+                position: relative;
+            }
+           }
+           .filter {
+            position: relative;
+            &:hover {
+                .filter__active {
+                    color: #fff;
+                }
+            }
+            &__active {
+                cursor: pointer;
+            }
+            &:hover {
+                .filter-item {
+                    display: block;
+                }
+            }
+            .filter-item {
+                top: 100%;
+                width: 80px;
+                right: -10px;
+                padding-top: 8px;
+                li {
+                    height: 25px;
+                }
+            }
+        }
+           tbody {
+            tr:first-child td {
+                padding-top: 20px;
+                padding-bottom: 5px;
+            }
+            tr:last-child td {
+                padding-bottom: 20px;
+            }
+            td {
+                font-size: 12px;
+                line-height: 14px;
+                padding: 8px 5px;
+                &:last-child {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+                &:first-child {
+                    padding-left: 15px;
+                }
+                .first {
+                    width: 25px;
+                    height: 25px;
+                    background-size: contain;
+                }
+            }
+           }
+        }
+    
+        .champions {
+            width: 100%;
+            &-card {
+                &__img {
+                    height: 150px;
+                }
+                width: 31%;
+                .chempion {
+                    width: 80px;
+                    right: -20px;
+                    bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 576px) {
     .title__text {
@@ -397,7 +826,7 @@
 
             // banner 
             .banner {
-                margin: 60px 0;
+                margin: 40px 0;
                 &-box {
                     overflow: hidden;
                 }
@@ -433,7 +862,9 @@
             // Games
             .games,
             .nft,
-            .artocles {
+            .artocles,
+            .gallery,
+            .explanation {
                 .swiper {
                     margin: 0 !important;
                     padding: 0 !important;
@@ -457,7 +888,8 @@
             }
 
              // artocles
-            .artocles {
+            .artocles
+            .explanation {
                 margin: 40px 0;
                 &-card {
                     color: #fff;
@@ -491,35 +923,334 @@
                 }
             }
 
-            // footer
-            .footer {
-                padding: 40px 0 30px;
-                &-social {
-                    margin-bottom: 20px;
-                    justify-content: end;
-                    .social {
-                        margin-right: 20px;
-                    }
+           
+        } 
+    }
+     // footer
+     .footer {
+        padding: 40px 0 30px;
+        &-social {
+            margin-bottom: 20px;
+            justify-content: end;
+            .social {
+                margin-right: 20px;
+            }
+        }
+        &-item {
+            margin-right: 0;
+            width: 50%;
+            &:last-child {
+                width: 100%;
+            }
+        }
+        &-list {
+            margin-bottom: 15px;
+        }
+        &-sub {
+            border-top: 1px solid gray;
+            padding-top: 20px;
+            &__text {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+    // etherstrike
+    .main {
+        .etherstrike {
+            padding-left: 15px;
+            &-box {
+                height: 280px;
+                margin-bottom: 30px;
+            }
+            &-girl {
+                position: absolute;
+                bottom: -20px;
+                right: -40px;
+                height: 150px;
+            }
+            &-check {
+                top: 5px;
+                left: 5px;
+                .check-bg {
+                    width: 100px;
+                    height: 40px;
+                    margin-bottom: 5px;
                 }
-                &-item {
-                    margin-right: 0;
-                    width: 50%;
-                    &:last-child {
-                        width: 100%;
-                    }
-                }
-                &-list {
-                    margin-bottom: 15px;
-                }
-                &-sub {
-                    border-top: 1px solid gray;
-                    padding-top: 20px;
-                    &__text {
-                        font-size: 12px;
-                        line-height: 18px;
+            }
+            &-text {
+                left: 5px;
+                bottom: 10px;
+                &__img {
+                    height: 15px;
+                    &:first-child {
+                        margin-right: 5px;
                     }
                 }
             }
-        } 
+            &__title {
+                font-size: 20px;
+                line-height: 22px;
+            }
+            &__text {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .play-now {
+                width: 200px;
+                height: 60px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+        .play-item {
+            .play-list {
+                height: 45px;
+                padding: 0 8px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .icon {
+                    margin-right: 8px;
+                }
+                .text {
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+
+        // nft-collections
+        .nft-collections {
+            margin: 40px 0;
+            &-card {
+                width: 100%;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .gallery {
+            margin: 40px 0;
+        }
+
+        .main-box .artocles, .main-box .explanation {
+            margin: 0;
+        }
+
+         // requirement
+        .requirement {
+            margin-top: 40px;
+            &-table {
+                width: 100%;
+                font-size: 12px;
+                line-height: 14px;
+                th {
+                    padding: 10px 5px;
+                    border-bottom: 2px solid #D9D9D933;
+                }
+                td {
+                    padding: 10px 5px;
+                }
+            }
+        }
+    }
+
+    // other-games page
+    .main {
+        .other-games {
+            .games-item {
+                &__img {
+                    height: 180px;
+                }
+                &__title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                &__text {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .main {
+        .product {
+            .swiper-product-active {
+                margin-bottom: 15px;
+                .product__img {
+                    height: 170px;
+                }
+            }
+            .swiper-product {
+                margin: 0;
+                .product__img {
+                    height: 40px;
+                    border-radius: 4px;
+                }
+            }
+            .play-now-link {
+                display: flex;
+            }
+            .play-now {
+                width: 100%;
+                font-size: 18px;
+            }
+            .play-item {
+                z-index: 999;
+            }
+            &__title {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+
+        .reviews {
+            margin-top: 40px;
+            form {
+                .review {
+                    width: 100%;
+                    height: 350px;
+                }
+                .edit-review {
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .trending,
+        .trending-game,
+        .featured {
+            .swiper {
+                margin: 0;
+            }
+            &-card {
+                &__title {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .trending-game {
+            margin: 40px 0;
+        }
+    }
+    .store-page .main-box .banner {
+        margin-top: 0;
+    }
+
+    .main {
+        .tournament {
+            padding-left: 10px;
+        }
+        .tournament-table {
+            margin: 40px 0 60px;
+        }
+        .top_players,
+        .team_leaderboard {
+            margin-top: 20px;
+        }
+        .champions {
+            width: 100%;
+            &-card {
+                &__img {
+                    height: 246px;
+                }
+                width: 85%;
+                margin-bottom: 40px;
+                .chempion {
+                    width: 60%;
+                    bottom: -25px;
+                    right: -40px;
+                }
+                &:nth-child(2) {
+                    transform: translateY(0) scale(1.1);
+                }
+            }
+        }
+
+        .check-table {
+            margin-top: 20px;
+            &__btn {
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    // token-page 
+    .main {
+        .token-page {
+            .token-wrapper {
+                background-position: 40% 0;
+                padding: 10px;
+                
+                .token-title__img {
+                    height: 35px;
+                    &:last-child {
+                        height: 15px;
+                        margin-top: 10px;
+                    }
+                }
+                .token__text {
+                    width: 60%;
+                    margin: 20px 0 50px;
+                    color: #fff8;
+                    line-height: 16px;
+                }
+                .buy-now {
+                    width: 180px;
+                    height: 55px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+
+    
+    // about us
+    .main {
+        .about {
+            &__title {
+                font-size: 22px;
+                line-height: 28px;
+                margin-bottom: 30px;
+                &::before {
+                    width: 50px;
+                }
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
+
+            &-item {
+                width: 100%;
+                &__text {
+                    width: 75%;
+                }
+            }
+            .roadmap {
+                &-item {
+                    &__title {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    &__text {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
     }
 }
