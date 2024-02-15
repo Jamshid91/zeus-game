@@ -83,9 +83,34 @@ input, textarea {
   caret-color: #F2B600;
 }
 
+.title-text {
+  font-family: 'ethnocentric', sans-serif;
+  font-size: 70px;
+  line-height: 75px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.subTitle-text {
+  font-family: 'ethnocentric', sans-serif;
+  font-size: 45px;
+  line-height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0 30px;
+  letter-spacing: -2px;
+}
+
+.header_home {
+  background: #0009;
+}
+
 .header {
   padding: 24px 0;
   margin-bottom: 50px;
+  position: relative;
+  z-index: 50;
 }
 
 .header-logo .logo {
@@ -150,6 +175,35 @@ input, textarea {
   color: #fff;
 }
 
+.video-box {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-box::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+  z-index: 1;
+  background: -webkit-linear-gradient(135deg, black 25%, gray 0px, gray 50%, black 0px, black 75%, gray 0px) 0% 0%/10px 10px;
+  background: -o-linear-gradient(135deg, black 25%, gray 0px, gray 50%, black 0px, black 75%, gray 0px) 0% 0%/10px 10px;
+  background: linear-gradient(-45deg, black 25%, gray 0px, gray 50%, black 0px, black 75%, gray 0px) 0% 0%/10px 10px;
+  z-index: 5;
+}
+
 .title__text {
   font-size: 28px;
   line-height: 33px;
@@ -177,7 +231,7 @@ input, textarea {
   height: 1100px;
   -webkit-background-size: cover;
           background-size: cover;
-  top: 0;
+  top: 98vh;
   left: 0;
   z-index: 1;
 }
@@ -218,8 +272,6 @@ input, textarea {
 
 .main {
   position: relative;
-  max-width: 1800px;
-  margin: 0 auto;
 }
 
 .main::before {
@@ -240,6 +292,7 @@ input, textarea {
   min-width: 247px;
   padding-right: 5px;
   position: relative;
+  z-index: 1000;
 }
 
 .main .sidebar-item {
@@ -247,6 +300,7 @@ input, textarea {
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
+  z-index: 1000;
 }
 
 .main .sidebar-item::after {
@@ -258,6 +312,7 @@ input, textarea {
   height: 95%;
   background: #fff;
   opacity: .1;
+  z-index: 1000;
 }
 
 .main .sidebar-list {
@@ -272,6 +327,7 @@ input, textarea {
           align-items: center;
   padding: 9px;
   margin-bottom: 20px;
+  z-index: 9999;
 }
 
 .main .sidebar-list:last-child {
@@ -370,6 +426,7 @@ input, textarea {
 .main-box .wrapper {
   margin: 100px 0 190px;
   padding-left: 90px;
+  margin-top: 100vh;
 }
 
 .main-box .wrapper-title {
@@ -576,18 +633,18 @@ input, textarea {
   border: 1px solid gray;
 }
 
-.main-box .banner-title__img {
-  -o-object-fit: contain;
-     object-fit: contain;
+.main-box .banner .title-text {
+  font-size: 45px;
+  line-height: 45px;
+  position: relative;
+  z-index: 2;
 }
 
-.main-box .banner-title__img:first-child {
-  width: 45%;
-}
-
-.main-box .banner-title__img:last-child {
-  width: 18%;
-  margin-top: 20px;
+.main-box .banner .subTitle-text {
+  font-size: 35px;
+  line-height: 35px;
+  position: relative;
+  z-index: 2;
 }
 
 .main-box .banner__text {
@@ -1168,7 +1225,12 @@ input, textarea {
 }
 
 .main .requirement {
-  margin-top: 60px;
+  margin: 60px 0;
+}
+
+.main .requirement .title__text {
+  font-size: 22px;
+  line-height: 25px;
 }
 
 .main .requirement-info {
@@ -2072,15 +2134,14 @@ input, textarea {
   margin-bottom: 60px;
 }
 
-.main .token-page .token-wrapper .token-title__img {
-  height: 95px;
-  -o-object-fit: contain;
-     object-fit: contain;
+.main .token-page .token-wrapper .title-text {
+  font-size: 50px;
+  line-height: 50px;
 }
 
-.main .token-page .token-wrapper .token-title__img:last-child {
-  height: 37px;
-  margin-top: 20px;
+.main .token-page .token-wrapper .subTitle-text {
+  font-size: 35px;
+  line-height: 35px;
 }
 
 .main .token-page .token-wrapper .token__text {
@@ -2309,6 +2370,14 @@ input, textarea {
     line-height: 18px;
     margin-right: 40px;
   }
+  .title-text {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .subTitle-text {
+    font-size: 35px;
+    line-height: 35px;
+  }
   .wrapper-bg {
     height: 900px;
   }
@@ -2337,7 +2406,7 @@ input, textarea {
     line-height: 16px;
   }
   .main-box .wrapper {
-    margin: 50px 0 80px;
+    margin-bottom: 80px;
     padding-left: 90px;
   }
   .main-box .wrapper-title {
@@ -2353,6 +2422,14 @@ input, textarea {
   .main-box .wrapper-title__img:last-child {
     margin-top: 30px;
     width: 32%;
+  }
+  .main .banner .title-text {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .main .banner .subTitle-text {
+    font-size: 25px;
+    line-height: 25px;
   }
   .main .tournament-wrapper .timer {
     margin: 30px 0 50px;
@@ -2422,8 +2499,11 @@ input, textarea {
     line-height: 16px;
     margin-right: 20px;
   }
+  .video-box {
+    height: 70vh;
+  }
   .wrapper-bg {
-    height: 700px;
+    top: 68vh;
   }
   .main .sidebar {
     min-width: 160px;
@@ -2451,7 +2531,8 @@ input, textarea {
     line-height: 14px;
   }
   .main-box .wrapper {
-    margin: 50px 0 80px;
+    margin-top: 70vh;
+    margin-bottom: 80px;
     padding-left: 90px;
   }
   .main-box .wrapper-title {
@@ -2661,7 +2742,7 @@ input, textarea {
     display: none;
   }
   .main-box .wrapper {
-    margin: 0 0 40px;
+    margin-bottom: 40px;
     padding-left: 20px;
   }
   .main-box .wrapper-title {
@@ -2769,12 +2850,13 @@ input, textarea {
     padding: 20px;
     margin-bottom: 40px;
   }
-  .main .token-page .token-wrapper .token-title__img {
-    height: 60px;
+  .main .token-page .token-wrapper .title-text {
+    font-size: 35px;
+    line-height: 35px;
   }
-  .main .token-page .token-wrapper .token-title__img:last-child {
-    height: 25px;
-    margin-top: 15px;
+  .main .token-page .token-wrapper .subTitle-text {
+    font-size: 25px;
+    line-height: 25px;
   }
   .main .token-page .token-wrapper .token__text {
     font-size: 14px;
@@ -2984,7 +3066,6 @@ input, textarea {
     margin-left: -5px;
   }
   .main-box .wrapper {
-    margin: 0 0 40px;
     padding-left: 20px;
   }
   .main-box .wrapper-title {
@@ -3355,11 +3436,13 @@ input, textarea {
     height: 15px;
     margin-top: 10px;
   }
-  .main .token-page .token-wrapper .token__text {
-    width: 60%;
-    margin: 20px 0 50px;
-    color: #fff8;
-    line-height: 16px;
+  .main .token-page .token-wrapper .title-text {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .main .token-page .token-wrapper .subTitle-text {
+    font-size: 25px;
+    line-height: 25px;
   }
   .main .token-page .token-wrapper .buy-now {
     width: 180px;

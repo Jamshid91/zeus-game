@@ -49,9 +49,34 @@ input, textarea {
     caret-color: #F2B600;
 }
 
+.title-text {
+    font-family: 'ethnocentric', sans-serif;
+    font-size: 70px;
+    line-height: 75px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.subTitle-text {
+    font-family: 'ethnocentric', sans-serif;
+    font-size: 45px;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 10px 0 30px;
+    letter-spacing: -2px;
+}
+
+.header_home {
+    background: #0009;
+}
+
 .header {
     padding: 24px 0;
     margin-bottom: 50px;
+    position: relative;
+    z-index: 50;
     &-logo {
         .logo {
             margin-right: 20px;
@@ -107,6 +132,31 @@ input, textarea {
         }
     }
 }
+
+.video-box {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.1;
+        z-index: 1;
+        background: linear-gradient(-45deg, black 25%, gray 0px, gray 50%, black 0px, black 75%, gray 0px) 0% 0% / 10px 10px;
+        z-index: 5;
+    }
+}
 .title__text {
     font-size: 28px;
     line-height: 33px;
@@ -125,7 +175,7 @@ input, textarea {
     width: 100%;
     height: 1100px;
     background-size: cover;
-    top: 0;
+    top: 98vh;
     left: 0;
     z-index: 1;
 } 
@@ -148,8 +198,6 @@ input, textarea {
 }
 .main {
     position: relative;
-    max-width: 1800px;
-    margin: 0 auto;
     &::before {
         content: '';
         position: fixed;
@@ -167,10 +215,12 @@ input, textarea {
         min-width: 247px;
         padding-right: 5px;
         position: relative;
+        z-index: 1000;
        &-item {
         width: 247px;
         position: sticky;
         top: 50px;
+        z-index: 1000;
         &::after {
             content: '';
             position: absolute;
@@ -180,6 +230,7 @@ input, textarea {
             height: 95%;
             background: #fff;
             opacity: .1;
+            z-index: 1000;
         }
        }
        &-list {
@@ -188,6 +239,7 @@ input, textarea {
         align-items: center;
         padding: 9px;
         margin-bottom: 20px;
+        z-index: 9999;
         &:last-child {
             margin-bottom: 0;
         }
@@ -261,6 +313,7 @@ input, textarea {
         .wrapper {
             margin: 100px 0 190px;
             padding-left: 90px;
+            margin-top: 100vh;
             &-title {
                 margin-bottom: 40px;
                 &__img {
@@ -416,17 +469,17 @@ input, textarea {
                 border-radius: 8px;
                 border: 1px solid gray;
             }
-            &-title {
-                &__img {
-                    object-fit: contain;
-                    &:first-child {
-                        width: 45%;
-                    }
-                    &:last-child {
-                        width: 18%;
-                        margin-top: 20px;
-                    }
-                }
+            .title-text {
+                font-size: 45px;
+                line-height: 45px;
+                position: relative;
+                z-index: 2;
+            }
+            .subTitle-text {
+                font-size: 35px;
+                line-height: 35px;
+                position: relative;
+                z-index: 2;
             }
             &__text {
                 font-size: 16px;
@@ -892,7 +945,11 @@ input, textarea {
 
     // requirement
     .requirement {
-        margin-top: 60px;
+        margin: 60px 0;
+        .title__text {
+            font-size: 22px;
+            line-height: 25px;
+        }
         &-info {
             color: #fff;
             font-size: 16px;
@@ -1611,13 +1668,13 @@ input, textarea {
             padding: 48px 54px;
             margin-bottom: 60px;
             
-            .token-title__img {
-                height: 95px;
-                object-fit: contain;
-                &:last-child {
-                    height: 37px;
-                    margin-top: 20px;
-                }
+            .title-text {
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .subTitle-text {
+                font-size: 35px;
+                line-height: 35px;
             }
             .token__text {
                 font-size: 16px;

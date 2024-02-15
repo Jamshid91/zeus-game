@@ -1,6 +1,7 @@
 const blockchains = new Swiper('.swiper-blockchain', {
     watchOverflow: true,
     slidesPerView: 1,
+    spaceBetween: 20,
     loop: true,
     navigation: {
         nextEl: '.blockchain-next',
@@ -116,3 +117,68 @@ const blockchains = new Swiper('.swiper-blockchain', {
     }
   
   });
+
+  
+const gallery = new Swiper('.swiper-gallery', {
+  watchOverflow: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+      nextEl: '.gallery-next',
+      prevEl: '.gallery-prev',
+    },
+    pagination: {
+      el: '.gallery-pagination',
+      clickable: true,
+    },
+  breakpoints: {
+      320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+      },
+      768: {
+          slidesPerView: 1.5,
+          spaceBetween: 20,
+      },
+      992: {
+          slidesPerView: 2.2,
+      },
+      1400: {
+          slidesPerView: 3.2,
+      },
+  }
+
+});
+
+const explanation = new Swiper('.swiper-explanation', {
+  watchOverflow: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+      nextEl: '.explanation-next',
+      prevEl: '.explanation-prev',
+    },
+    pagination: {
+      el: '.explanation-pagination',
+      clickable: true,
+    },
+  breakpoints: {
+      320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+      },
+      768: {
+          slidesPerView: 2.2,
+          spaceBetween: 15,
+      },
+      992: {
+          slidesPerView: 2.2,
+      },
+      1400: {
+          slidesPerView: 3.2,
+      },
+  }
+
+});

@@ -22,6 +22,16 @@
         }
     }
 
+    .title-text {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    
+    .subTitle-text {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
     .wrapper-bg {
         height: 900px;
     } 
@@ -54,7 +64,7 @@
     &-box {
         // Wrapper
         .wrapper {
-                margin: 50px 0 80px;
+            margin-bottom: 80px;
                 padding-left: 90px;
                 &-title {
                     margin-bottom: 40px;
@@ -71,6 +81,17 @@
                 }
             } 
         } 
+
+        .banner {
+            .title-text {
+                font-size: 35px;
+                line-height: 35px;
+            }
+            .subTitle-text {
+                font-size: 25px;
+                line-height: 25px;
+            }
+        }
 
         .tournament-wrapper {
             .timer {
@@ -155,9 +176,12 @@
             margin-right: 20px;
         }
     }
+    .video-box {
+        height: 70vh;
+    }
 
     .wrapper-bg {
-        height: 700px;
+        top: 68vh;
     } 
     .main {
     // Sidebar
@@ -189,7 +213,8 @@
     &-box {
         // Wrapper
         .wrapper {
-                margin: 50px 0 80px;
+            margin-top: 70vh;
+                margin-bottom: 80px;
                 padding-left: 90px;
                 &-title {
                     margin-bottom: 40px;
@@ -408,7 +433,7 @@
     &-box {
         // Wrapper
         .wrapper {
-                margin: 0 0 40px;
+                margin-bottom: 40px;
                 padding-left: 20px;
                 &-title {
                     margin-bottom: 20px;
@@ -531,12 +556,13 @@
                 padding: 20px;
                 margin-bottom: 40px;
                 
-                .token-title__img {
-                    height: 60px;
-                    &:last-child {
-                        height: 25px;
-                        margin-top: 15px;
-                    }
+                .title-text {
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+                .subTitle-text {
+                    font-size: 25px;
+                    line-height: 25px;
                 }
                 .token__text {
                     font-size: 14px;
@@ -783,7 +809,6 @@
     &-box {
         // Wrapper
         .wrapper {
-                margin: 0 0 40px;
                 padding-left: 20px;
                 &-title {
                     margin-bottom: 20px;
@@ -1199,11 +1224,14 @@
                         margin-top: 10px;
                     }
                 }
-                .token__text {
-                    width: 60%;
-                    margin: 20px 0 50px;
-                    color: #fff8;
-                    line-height: 16px;
+              
+                .title-text {
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+                .subTitle-text {
+                    font-size: 25px;
+                    line-height: 25px;
                 }
                 .buy-now {
                     width: 180px;

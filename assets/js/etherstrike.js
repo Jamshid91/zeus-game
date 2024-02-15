@@ -12,7 +12,6 @@ checks.forEach(check => {
     });
 });
 
-
 const gallery = new Swiper('.swiper-gallery', {
     watchOverflow: true,
     slidesPerView: 1,
@@ -44,7 +43,7 @@ const gallery = new Swiper('.swiper-gallery', {
     }
   
   });
-
+  
   const explanation = new Swiper('.swiper-explanation', {
     watchOverflow: true,
     slidesPerView: 1,
@@ -76,3 +75,4 @@ const gallery = new Swiper('.swiper-gallery', {
     }
   
   });
+
