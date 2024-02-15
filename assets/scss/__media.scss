@@ -66,19 +66,6 @@
         .wrapper {
             margin-bottom: 80px;
                 padding-left: 90px;
-                &-title {
-                    margin-bottom: 40px;
-                    &__img {
-                        object-fit: contain;
-                        &:first-child {
-                            width: 50%;
-                        }
-                        &:last-child {
-                            margin-top: 30px;
-                            width: 32%;
-                        }
-                    }
-                }
             } 
         } 
 
@@ -216,19 +203,6 @@
             margin-top: 70vh;
                 margin-bottom: 80px;
                 padding-left: 90px;
-                &-title {
-                    margin-bottom: 40px;
-                    &__img {
-                        object-fit: contain;
-                        &:first-child {
-                            width: 50%;
-                        }
-                        &:last-child {
-                            margin-top: 30px;
-                            width: 32%;
-                        }
-                    }
-                }
             } 
         } 
     }
@@ -435,18 +409,13 @@
         .wrapper {
                 margin-bottom: 40px;
                 padding-left: 20px;
-                &-title {
-                    margin-bottom: 20px;
-                    &__img {
-                        object-fit: contain;
-                        &:first-child {
-                            width: 60%;
-                        }
-                        &:last-child {
-                            margin-top: 20px;
-                            width: 40%;
-                        }
-                    }
+                .title-text {
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+                .subTitle-text {
+                    font-size: 25px;
+                    line-height: 25px;
                 }
                 .swiper-blockchain {
                     .blockchain__text {
@@ -810,18 +779,13 @@
         // Wrapper
         .wrapper {
                 padding-left: 20px;
-                &-title {
-                    margin-bottom: 20px;
-                    &__img {
-                        object-fit: contain;
-                        &:first-child {
-                            width: 70%;
-                        }
-                        &:last-child {
-                            margin-top: 10px;
-                            width: 45%;
-                        }
-                    }
+                .title-text {
+                    font-size: 28px;
+                    line-height: 28px;
+                }
+                .subTitle-text {
+                    font-size: 20px;
+                    line-height: 20px;
                 }
                 .swiper-blockchain {
                     .blockchain__text {
@@ -855,16 +819,13 @@
                 &-box {
                     overflow: hidden;
                 }
-                &-title {
-                    &__img {
-                        &:first-child {
-                            width: 80%;
-                        }
-                        &:last-child {
-                            width: 50%;
-                            margin-top: 5px;
-                        }
-                    }
+                .title-text {
+                    font-size: 28px;
+                    line-height: 28px;
+                }
+                .subTitle-text {
+                    font-size: 20px;
+                    line-height: 20px;
                 }
                 &__text {
                     font-size: 12px;

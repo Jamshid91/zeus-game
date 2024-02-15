@@ -2409,20 +2409,6 @@ input, textarea {
     margin-bottom: 80px;
     padding-left: 90px;
   }
-  .main-box .wrapper-title {
-    margin-bottom: 40px;
-  }
-  .main-box .wrapper-title__img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .main-box .wrapper-title__img:first-child {
-    width: 50%;
-  }
-  .main-box .wrapper-title__img:last-child {
-    margin-top: 30px;
-    width: 32%;
-  }
   .main .banner .title-text {
     font-size: 35px;
     line-height: 35px;
@@ -2534,20 +2520,6 @@ input, textarea {
     margin-top: 70vh;
     margin-bottom: 80px;
     padding-left: 90px;
-  }
-  .main-box .wrapper-title {
-    margin-bottom: 40px;
-  }
-  .main-box .wrapper-title__img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .main-box .wrapper-title__img:first-child {
-    width: 50%;
-  }
-  .main-box .wrapper-title__img:last-child {
-    margin-top: 30px;
-    width: 32%;
   }
   .main .etherstrike {
     padding-left: 20px;
@@ -2745,19 +2717,13 @@ input, textarea {
     margin-bottom: 40px;
     padding-left: 20px;
   }
-  .main-box .wrapper-title {
-    margin-bottom: 20px;
+  .main-box .wrapper .title-text {
+    font-size: 35px;
+    line-height: 35px;
   }
-  .main-box .wrapper-title__img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .main-box .wrapper-title__img:first-child {
-    width: 60%;
-  }
-  .main-box .wrapper-title__img:last-child {
-    margin-top: 20px;
-    width: 40%;
+  .main-box .wrapper .subTitle-text {
+    font-size: 25px;
+    line-height: 25px;
   }
   .main-box .wrapper .swiper-blockchain .blockchain__text {
     margin-bottom: 20px;
@@ -3068,19 +3034,13 @@ input, textarea {
   .main-box .wrapper {
     padding-left: 20px;
   }
-  .main-box .wrapper-title {
-    margin-bottom: 20px;
+  .main-box .wrapper .title-text {
+    font-size: 28px;
+    line-height: 28px;
   }
-  .main-box .wrapper-title__img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .main-box .wrapper-title__img:first-child {
-    width: 70%;
-  }
-  .main-box .wrapper-title__img:last-child {
-    margin-top: 10px;
-    width: 45%;
+  .main-box .wrapper .subTitle-text {
+    font-size: 20px;
+    line-height: 20px;
   }
   .main-box .wrapper .swiper-blockchain .blockchain__text {
     margin-bottom: 15px;
@@ -3110,12 +3070,13 @@ input, textarea {
   .main-box .banner-box {
     overflow: hidden;
   }
-  .main-box .banner-title__img:first-child {
-    width: 80%;
+  .main-box .banner .title-text {
+    font-size: 28px;
+    line-height: 28px;
   }
-  .main-box .banner-title__img:last-child {
-    width: 50%;
-    margin-top: 5px;
+  .main-box .banner .subTitle-text {
+    font-size: 20px;
+    line-height: 20px;
   }
   .main-box .banner__text {
     font-size: 12px;
