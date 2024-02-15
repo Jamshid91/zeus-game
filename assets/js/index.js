@@ -182,3 +182,7 @@ const explanation = new Swiper('.swiper-explanation', {
   }
 
 });
+
+$(window).on('load', function() {
+  $('video')[0].play();
+});
